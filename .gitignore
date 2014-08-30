@@ -1,6 +1,7 @@
 # curl test files with device id and access token 
 *.curl
 
-# private js files (the ones that contain spark device id and auth token)
+# private files and folders (like the one that contain spark device id and auth token)
+**/private
  
 
