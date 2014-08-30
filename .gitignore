@@ -2,6 +2,6 @@
 *.curl
 
 # private files and folders (like the one that contain spark device id and auth token)
-**/private
+/**/private
  
 
