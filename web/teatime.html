@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	html, body { margin: 0; padding: 0; }
+
+  #bottomNav { position: absolute; bottom: 0; left: 0; height : 50px; width: 100%; border-top: 5px solid #ebebeb; font-family: sans-serif; font-size: 2em;
+				padding-top: 20px;	 padding-left:1%; }
+  #bottomNavInside { position: relative; width:600px }
+  #btnStart { margin-right: 200px;  width: 200px; float: right; text-align: right; cursor: pointer;}
+  #timeToTea { margin-right: auto; margin-left: auto; width: 1em; float: left; text-align: center }
+  #imgBanner {  position: absolute; top: 40px; width: 450px;}
+  #imgBag { position: absolute; bottom: 220px; left: 180px; z-index: 5;}
+  #imgCup { position: absolute; bottom: 70px; left: 100px; z-index: 10;}
+  #lessTime {width: 15px;} 
+</style>
+
+<script src="js/private/sparkdevice.js"></script>
+<script src="js/controller.js"></script>
+
+</head>
+<body>
+
+
+<div">
+	<img id="imgBanner" src="img/tea_time.png">
+</div>
+
+<div id="imgBag">
+	<img src="img/Oranzova_Snurka_Cernycaj.png">
+</div>
+<div id="imgCup">
+	<img src="img/cup_pruhledny.png">
+</div>
+<div id="bottomNav" >
+	<div id="bottomNavInside" >
+		<div id="timeToTea">
+			Ready
+		</div>
+		<div id="btnStart" onclick="BagDown()">
+				Start
+				
+		</div>
+		
+	</div>
+</div>
+<p id="timer"></p>
+ 
+</body>
+</html>
