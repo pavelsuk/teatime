@@ -2,11 +2,20 @@ teatime
 =======
 
 Project based on sparkcore that helps you to pick a teabag from a tea (even remotely).
-Developed originally for Kerio Hackathon (Aug 2014)
 
-Content: 
+![Device](/doc/mechanicalpart.jpg) 
 
-- schema and code for sparkcore is in /sketch folder
-- web application is in /web folder
+Developed originally for Kerio Hackathon (Aug 2014) by @pavelsuk and @KrystofSuk <br>
+[Project Page on samepage.io](https://samepage.io/app/#!/8740458cffb7c86971911d5f12e1e2291de7f7b7/page-126881513722913670-tea-time-project)
+See also [video on youtube](http://youtu.be/McFfmxNae6I)
 
+** Content
+
+
+- /sketch: schema and code for sparkcore
+- /web/teatime.html: simple web application
+
+Before you run the application, you need to modify ![private sparkdevice.js](web/js/private/sparkdevice.js) and replace <your_device_id> and <your_access_token> by your IDs. Don't commit these changes back to github.
+
+![Breadboard](/doc/breadboard.jpg) 
 ![Breadboard Schema](/sketch/schema_bb.png) 
