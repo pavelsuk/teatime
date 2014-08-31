@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!-- 
+	Styles should be better handled in separate css file, keeping it here just for the simplicity 
+-->
 <style type="text/css">
 	html, body { margin: 0; padding: 0; }
 
@@ -15,7 +19,18 @@
   #lessTime {width: 15px;} 
 </style>
 
+<!-- 
+	Following script contains private IDs to spark core. You must modify it before running the app.  
+-->
 <script src="js/private/sparkdevice.js"></script>
+<!-- 
+	You can also omit the script and add these variables anywhere - see the example bellow, just don't commit the file back.
+<script>
+	var url2SparkCore = "https://api.spark.io/v1/devices/<your_device_id>/"
+	var access_token_param = "access_token=<your_access_token>"
+</script>
+-->
+
 <script src="js/controller.js"></script>
 
 </head>
