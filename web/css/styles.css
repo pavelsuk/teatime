@@ -1,0 +1,43 @@
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+.center-glob {
+  width: 640px;
+  margin: 0 auto;
+  position: relative;
+  font-family: sans-serif; font-size: 2em;
+}
+ 
+ 
+ .header { 
+	text-align: center;
+	margin-bottom: .5em;
+	border-bottom: 5px solid #ebebeb; 
+	padding: 0.25em 0 0.25em;
+ }
+ 
+ .teamaker {
+  margin: 0 auto;
+  height: 400px;
+  position: relative;
+ }
+ 
+  #imgBag { 
+	position: absolute; 
+	top: 0%;
+	left: 44.53125%; z-index: 5;}
+	
+  #imgCup { position: absolute; bottom: -8px; 
+			left: 33%;  z-index: 10;}
+  
+  .bottomNav {
+	border-top: 5px solid #ebebeb; 
+	padding: 0.25em 1em 0.25em 1em;
+ }
+ 
+  #timeToTea {	float: left; text-align: left }
+  #btnStart { float: right; text-align: right; cursor: pointer;}
+  

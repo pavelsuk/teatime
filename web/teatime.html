@@ -2,22 +2,12 @@
 <html>
 <head>
 
-<!-- 
-	Styles should be better handled in separate css file, keeping it here just for the simplicity 
--->
-<style type="text/css">
-	html, body { margin: 0; padding: 0; }
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-  #bottomNav { position: absolute; bottom: 0; left: 0; height : 50px; width: 100%; border-top: 5px solid #ebebeb; font-family: sans-serif; font-size: 2em;
-				padding-top: 20px;	 padding-left:1%; }
-  #bottomNavInside { position: relative; width:600px }
-  #btnStart { margin-right: 200px;  width: 200px; float: right; text-align: right; cursor: pointer;}
-  #timeToTea { margin-right: auto; margin-left: auto; width: 1em; float: left; text-align: center }
-  #imgBanner {  position: absolute; top: 40px; width: 450px;}
-  #imgBag { position: absolute; bottom: 220px; left: 180px; z-index: 5;}
-  #imgCup { position: absolute; bottom: 70px; left: 100px; z-index: 10;}
-  #lessTime {width: 15px;} 
-</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
 <!-- 
 	Following script contains private IDs to spark core. You must modify it before running the app.  
@@ -36,30 +26,31 @@
 </head>
 <body>
 
+   <div class="center-glob">
 
-<div">
-	<img id="imgBanner" src="img/tea_time.png">
-</div>
 
-<div id="imgBag">
-	<img src="img/orange_rope_blacktea.png">
-</div>
-<div id="imgCup">
-	<img src="img/cup_transparent.png">
-</div>
-<div id="bottomNav" >
-	<div id="bottomNavInside" >
-		<div id="timeToTea">
-			Ready
+		<div class="header">Tea Timer</div>
+		<div class="teamaker"> 
+			<div id="imgBag">
+				<img src="img/orange_rope_blacktea.png">
+			</div>
+			<div id="imgCup">
+				<img src="img/cup_transparent.png">
+			</div>
 		</div>
-		<div id="btnStart" onclick="bagMove()">
-				Start
+		<div class="bottomNav" >
+			<div class="bottomNavInside" >
+				<div id="timeToTea">
+					Ready
+				</div>
+				<div id="btnStart" onclick="bagMove()">
+						Start						
+				</div>
 				
+			</div>
 		</div>
 		
 	</div>
-</div>
-<p id="timer"></p>
  
 </body>
 </html>

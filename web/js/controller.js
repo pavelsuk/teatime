@@ -110,7 +110,7 @@ function bagMove() {
 }
 
 function updateBagVisual() {
-		document.getElementById("imgBag").style.bottom= (isBagDown ? "90px" : "230px");
+		document.getElementById("imgBag").style.top = (isBagDown ? "44%" : "0%");
 		document.getElementById("btnStart").innerHTML= (isBagDown ? "Stop" : "Start");
 }
 
