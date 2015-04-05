@@ -69,6 +69,7 @@ void loop() {
     if (isTeaReady()) {
         teaUp("");
         tmInterval=0;
+		Spark.publish("teaisready", "1", NULL, PRIVATE);
     }
     delay(500);
 
