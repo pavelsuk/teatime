@@ -69,7 +69,10 @@ void loop() {
     if (isTeaReady()) {
         teaUp("");
         tmInterval=0;
-		Spark.publish("teaisready", "1", NULL, PRIVATE);
+		
+// 		trying to use events, but it doesn't work with private sparkcloud on rpi
+//		Spark.publish("teaisready", "1", NULL, PRIVATE);
+//
     }
     delay(500);
 
